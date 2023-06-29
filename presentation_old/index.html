@@ -28,7 +28,6 @@
           data-background-image="assets/logo_nubi.png"
           data-background-opacity="0.05"
           data-background-size="contain"
-          data-background-position="center"
         ></section>
         <section
           data-auto-animate
@@ -54,66 +53,22 @@
 
         <section data-auto-animate>
           <h2 class="r-stack r-fit-text">Re-używalne mechanizmy</h2>
-        </section>
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Re-używalne mechanizmy</h2>
           <ul>
-            <li>zarządzanie stanem komponentu</li>
-          </ul>
-        </section>
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Re-używalne mechanizmy</h2>
-          <ul>
-            <li>zarządzanie stanem komponentu</li>
-            <li>obsługa requestów HTTP</li>
-          </ul>
-        </section>
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Re-używalne mechanizmy</h2>
-          <ul>
-            <li>zarządzanie stanem komponentu</li>
-            <li>obsługa requestów HTTP</li>
-            <li>obsługa cache&apos;u przy pomocy interceptor&apos;a</li>
+            <li class="fragment">zarządzanie stanem komponentu</li>
+            <li class="fragment">obsługa requestów HTTP</li>
+            <li class="fragment">obsługa cache&apos;u przy pomocy interceptor&apos;a</li>
           </ul>
         </section>
 
         <!-- Zarządzanie stanem -->
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
-          <ul>
-          </ul>
-        </section>
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
-          <ul>
-            <li>RxJS</li>
-          </ul>
-        </section>
 
         <section data-auto-animate>
           <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
           <ul>
-            <li>RxJS</li>
-            <li>Wzorzec obserwatora</li>
-          </ul>
-        </section>
-
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
-          <ul>
-            <li>RxJS</li>
-            <li>Wzorzec obserwatora</li>
-            <li>Czym jest Promise?</li>
-          </ul>
-        </section>
-
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
-          <ul>
-            <li>RxJS</li>
-            <li>Wzorzec obserwatora</li>
-            <li>Czym jest Promise?</li>
-            <li>Cold vs Hot observables</li>
+            <li class="fragment">RxJS</li>
+            <li class="fragment">Wzorzec obserwatora</li>
+            <li class="fragment">Czym jest Promise?</li>
+            <li class="fragment">Cold vs Hot observables</li>
           </ul>
         </section>
 
@@ -127,42 +82,10 @@
             <li>Wzorzec obserwatora</li>
             <li>Czym jest Promise?</li>
             <li>Cold vs Hot observables</li>
-          </ul>
-        </section>
-
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
-          <ul>
-            <li>RxJS</li>
-            <li>Wzorzec obserwatora</li>
-            <li>Czym jest Promise?</li>
-            <li>Cold vs Hot observables</li>
-            <li>Subskrypcja</li>
-          </ul>
-        </section>
-
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
-          <ul>
-            <li>RxJS</li>
-            <li>Wzorzec obserwatora</li>
-            <li>Czym jest Promise?</li>
-            <li>Cold vs Hot observables</li>
-            <li>Subskrypcja</li>
-            <li>Strumień</li>
-          </ul>
-        </section>
-
-        <section data-auto-animate>
-          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
-          <ul>
-            <li>RxJS</li>
-            <li>Wzorzec obserwatora</li>
-            <li>Czym jest Promise?</li>
-            <li>Cold vs Hot observables</li>
-            <li>Subskrypcja</li>
-            <li>Strumień</li>
-            <li>I wiele, więcej :D</li>
+            <li class="fragment">Subskrypcja</li>
+            <li class="fragment">Operatory</li>
+            <li class="fragment">Strumień</li>
+            <li class="fragment">I wiele, więcej :D</li>
           </ul>
         </section>
 
@@ -184,6 +107,34 @@
             </aside>
           </section>
 
+          <section data-auto-animate>
+            <h2 class="r-stack">Observable? A co to takiego?</h2>
+
+            <p>Observable to strumień wartości (pojedyńczej lub wielu, dowolny typ), na który możesz nasłuchiwać i od którego w dowolnym momencie możesz się odłączyć.</p>
+
+            <span class="fragment">Przykładowe strumienie w angularze:</span>
+            <ul>
+              <li class="fragment">httpClient.get, httpClient.post itp.</li>
+              <li class="fragment">Router.events</li>
+              <li class="fragment">EventEmmiter</li>
+              <li class="fragment">ActivatedRoute.params</li>
+            </ul>
+
+            <aside class="notes">
+              <p>Użytkownik jest obserwatorem (obserwuje strumień i nasłuchuje na wysyłane posty)</p>
+              <p>Strumień z newsami to obiekt obserwowany czyli Observable, który emituje wartości (newsy)</p>
+              <p>Subskrypcja do strumienia z newsami udostępnia Ci funkcjonalność „unsubscribe”, która wypisuje użytkownika z newslettera i już użytkownik nie otrzymuje powiadomień</p>
+              <p>
+                Angular w wielu miejscach zwraca nam strumienie, min.:
+                httpClient.get, post, etc.
+                Router.events
+                AbstractControl.valueChanges
+                ActivatedRoute.params
+                EventEmitter (tak tak, ten który używasz wraz z @Output)
+              </p>
+            </aside>
+          </section>
+
           <!-- Wyjaśnienie observera -->
           <section data-auto-animate>
             <video data-autoplay src="assets/video/observer.webm" playbackRate="0.5"></video>
@@ -196,7 +147,7 @@
           <section>
             <h6 data-id="code-title">state.service.ts</h6>
             <pre>
-              <code data-trim data-noescape data-line-numbers="1-52|1-2|12-15|5-6|8-10|22-27|35-40|47-51">
+              <code data-trim data-noescape data-line-numbers="1-52|1|12-15|5-6|8-10|22-27|35-40|47-51">
                 import { BehaviorSubject, Observable } from 'rxjs';
                 import { distinctUntilChanged, map } from 'rxjs/operators';
 
@@ -251,6 +202,11 @@
                 }
               </code>
             </pre>
+
+            <aside class="notes">
+              <p>BehaviourSubject - jest specyficznym rodzajem strumienia. Zawsze posiada on wartość, gdyż jest ona wymagana przy tworzeniu danego obiektu. Ponadto, strumień ten zawsze przechowuje ostatnio emitowaną wartość i podobnie jak w przypadku ReplaySubject, odtwarza ją każdemu nowemu obserwatorowi.</p>
+              <p>RxJS oferuje nam również możliwość tworzenia własnych strumieni. Możemy to zrobić za pomocą obiektów typu Subject.  Taki strumień jest więc tematem, potencjalnie nieskończonym, który emituje nowe wartości w kluczowych dla nas miejscach aplikacji.</p>
+            </aside>
           </section>
 
           <section>
@@ -320,6 +276,9 @@
 
               </code>
             </pre>
+            <aside class="notes">
+              <p>ShareReplay - zwraca nowy strumień, który współdzieli strumień wejściowy. Pozwala uniknąć wywołania tych samych operacji kilka razy w przypadku kilku subskrypcji.</p>
+            </aside>
           </section>
 
           <section>
@@ -783,24 +742,62 @@
 
         </section>
 
+        <!-- Koniec -->
+        <section>
+          <section data-auto-animate>
+            <h2 class="r-stack r-fit-text">Podsumowanie</h2>
+            <ul>
+              <li class="fragment">Angular + RxJS nie taki straszny jak go malują</li>
+              <li class="fragment">Programowanie reaktywne ma spory próg wejścia</li>
+              <li class="fragment">Nie ma gotowych rozwiązań znanych z innych frameworków (Tanstack Query), jeszcze</li>
+              <li class="fragment">Początkowo ciężko się połapać w jaki sposób tworzyć komponenty, jak zarządzać stanem i zapytaniami HTTP, trzeba posiadać wiedzę na temat działania RxJS</li>
+              <li class="fragment">Angular jest wolny (changeDetector nie daje rady)</li>
+              <li class="fragment">MaterialAngular pozostawia wiele do życzenia</li>
+            </ul>
+          </section>
+
+          <section data-auto-animate>
+            <h2 class="r-stack r-fit-text">Podsumowanie</h2>
+            <ul>
+              <li>Niby wszystko jest w Angularze, bo w końcu to framework, ale jak przyjdzie co do czego to i tak trzeba sobie pisać jakieś rozwiązanie, albo bezsensownie kopiować kod</li>
+              <li class="fragment">Moduły w Angularze dla osób po React/Vue będą dziwnym tworem, na szczęście można już je pominąć stosując "standalone" komponenty, gdzie cała aplikacja może być prawie bez jednego modułu.</li>
+              <li class="fragment">Klasowe i modułowe podejście na pewno jest łatwiejsze dla zrozumienia osób z wiedzą stricte back-end'ową</li>
+            </ul>
+          </section>
+        </section>
+
+        <section data-transition="zoom" data-background-image="assets/gifs/bye-slide.gif" data-background-size="500px">
+        </section>
+
+        <section data-auto-animate>
+          <h1 class="r-stack r-fit-text"><strong>Pytania?</strong></h1>
+        </section>
+
+        <section data-transition="zoom" data-background-image="assets/gifs/lets-drunk.gif" data-background-size="800px">
+        </section>
 
         <!--  -->
       </div>
     </div>
 
     <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
-
+        controls: true,
+				progress: true,
+				center: true,
+        // slideNumber: true,
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
       });
     </script>
   </body>
