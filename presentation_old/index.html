@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>SkillUp #18</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/nubi.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="css/onedark.css" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Wprowadzenie -->
+        <section
+          data-auto-animate
+          data-background-image="assets/logo_nubi.png"
+          data-background-opacity="0.05"
+          data-background-size="contain"
+          data-background-position="center"
+        ></section>
+        <section
+          data-auto-animate
+          data-background-image="assets/logo_nubi.png"
+          data-background-opacity="0.05"
+          data-background-size="contain"
+        >
+          <h1 class="r-fit-text">
+            <strong>Angular 15/*</strong>
+          </h1>
+        </section>
+        <section
+          data-auto-animate
+          data-background-image="assets/logo_nubi.png"
+          data-background-opacity="0.05"
+          data-background-size="contain"
+        >
+          <h1 class="r-fit-text">
+            <strong>Angular 15/*</strong>
+          </h1>
+          <h3 class="r-fit-text">przez pryzmat React&apos;owca</h3>
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Re-używalne mechanizmy</h2>
+        </section>
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Re-używalne mechanizmy</h2>
+          <ul>
+            <li>zarządzanie stanem komponentu</li>
+          </ul>
+        </section>
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Re-używalne mechanizmy</h2>
+          <ul>
+            <li>zarządzanie stanem komponentu</li>
+            <li>obsługa requestów HTTP</li>
+          </ul>
+        </section>
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Re-używalne mechanizmy</h2>
+          <ul>
+            <li>zarządzanie stanem komponentu</li>
+            <li>obsługa requestów HTTP</li>
+            <li>obsługa cache&apos;u przy pomocy interceptor&apos;a</li>
+          </ul>
+        </section>
+
+        <!-- Zarządzanie stanem -->
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+          </ul>
+        </section>
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+            <li>RxJS</li>
+          </ul>
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+            <li>RxJS</li>
+            <li>Wzorzec obserwatora</li>
+          </ul>
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+            <li>RxJS</li>
+            <li>Wzorzec obserwatora</li>
+            <li>Czym jest Promise?</li>
+          </ul>
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+            <li>RxJS</li>
+            <li>Wzorzec obserwatora</li>
+            <li>Czym jest Promise?</li>
+            <li>Cold vs Hot observables</li>
+          </ul>
+        </section>
+
+        <section data-transition="zoom" data-background-image="assets/gifs/confused-wth.gif" data-background-size="800px">
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+            <li>RxJS</li>
+            <li>Wzorzec obserwatora</li>
+            <li>Czym jest Promise?</li>
+            <li>Cold vs Hot observables</li>
+          </ul>
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+            <li>RxJS</li>
+            <li>Wzorzec obserwatora</li>
+            <li>Czym jest Promise?</li>
+            <li>Cold vs Hot observables</li>
+            <li>Subskrypcja</li>
+          </ul>
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+            <li>RxJS</li>
+            <li>Wzorzec obserwatora</li>
+            <li>Czym jest Promise?</li>
+            <li>Cold vs Hot observables</li>
+            <li>Subskrypcja</li>
+            <li>Strumień</li>
+          </ul>
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="r-stack r-fit-text">Co trzeba znać?</h2>
+          <ul>
+            <li>RxJS</li>
+            <li>Wzorzec obserwatora</li>
+            <li>Czym jest Promise?</li>
+            <li>Cold vs Hot observables</li>
+            <li>Subskrypcja</li>
+            <li>Strumień</li>
+            <li>I wiele, więcej :D</li>
+          </ul>
+        </section>
+
+
+        <section data-transition="zoom" data-background-image="assets/gifs/what-wait.gif" data-background-size="800px">
+        </section>
+
+        <section data-auto-animate>
+          <h4 class="pageTitle"><strong>Wprowadzenie</strong></h4>
+
+          <section data-auto-animate>
+            <h2 class="r-stack">RxJS</h2>
+            <p>RxJS to biblioteka JavaScript, która implementuje wzorzec programowania reaktywnego, oparty na strumieniach danych.</p>
+
+            <aside class="notes">
+              <p>Reactive Extensions JS</p>
+              <p>Strumień zimny - emituje wartości w przypadku gry ktoś zaobserwuje, każdy obserwator dostanie odrębną wartość.</p>
+              <p>Strumień gorący - emituje wartości niezależnie czy ktoś nasłuchuje, każdy obserwator dostanie tę samą wartość w momencie emitowania.</p>
+            </aside>
+          </section>
+
+          <!-- Wyjaśnienie observera -->
+          <section data-auto-animate>
+            <video data-autoplay src="assets/video/observer.webm" playbackRate="0.5"></video>
+          </section>
+        </section>
+
+        <section>
+          <h4 class="pageTitle"><strong>Zarządzanie stanem</strong></h4>
+
+          <section>
+            <h6 data-id="code-title">state.service.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-52|1-2|12-15|5-6|8-10|22-27|35-40|47-51">
+                import { BehaviorSubject, Observable } from 'rxjs';
+                import { distinctUntilChanged, map } from 'rxjs/operators';
+
+                export class StateService<T> {
+                  private initialState: T;
+                  private state$: BehaviorSubject<T>;
+
+                  protected get state(): T {
+                    return this.state$.getValue();
+                  }
+
+                  constructor(initialState: T) {
+                    this.state$ = new BehaviorSubject<T>(initialState);
+                    this.initialState = initialState;
+                  }
+
+                  /**
+                  * @memberof StateService
+                  * @method getState()
+                  * @description Method to get entire local state as Observable$
+                  */
+                  protected getState<K>(mapFn: (state: T) => K): Observable<K> {
+                    return this.state$.asObservable().pipe(
+                      map((state: T) => mapFn(state)),
+                      distinctUntilChanged()
+                    );
+                  }
+
+                  /**
+                  * @memberof StateService
+                  * @method setState()
+                  * @param {Partial<T>} newState New part of local state
+                  * @description Method to change part of local state
+                  */
+                  protected setState(newState: Partial<T>) {
+                    this.state$.next({
+                      ...this.state,
+                      ...newState,
+                    });
+                  }
+
+                  /**
+                  * @memberof StateService
+                  * @method resetState()
+                  * @description Method to reset local state to initial value
+                  */
+                  protected resetState() {
+                    this.state$.next({
+                      ...this.initialState,
+                    });
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h6 data-id="code-title">documents.state.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-61|5-11|16|17-19|21-23|25-55|57-59">
+                import { Injectable } from '@angular/core';
+
+                import { Observable, shareReplay } from 'rxjs';
+
+                interface IDocumentsState {
+                  selectedDocumentIds: string[];
+                }
+
+                const initialState: IDocumentsState = {
+                  selectedDocumentIds: [],
+                };
+
+                @Injectable({
+                  providedIn: 'root',
+                })
+                export class DocumentsStateService extends StateService<IDocumentsState> {
+                  selectedDocumentIds$: Observable<string[]> = this.getState(state => state.selectedDocumentIds).pipe(
+                    shareReplay({ refCount: true, bufferSize: 1 })
+                  );
+
+                  constructor() {
+                    super(initialState);
+                  }
+
+                  getSelectedDocumentIds() {
+                    return this.state.selectedDocumentIds;
+                  }
+
+                  isDocumentSelected(documentId: string) {
+                    return this.state.selectedDocumentIds.find(selectedDocumentId => selectedDocumentId === documentId);
+                  }
+
+                  areAllDocumentsSelected(fetchedDocuments: IDocumentCollection[]) {
+                    return this.state.selectedDocumentIds.length === fetchedDocuments.length;
+                  }
+
+                  handleSelectDocument(documentId: string) {
+                    const selectedDocumentIds = this.state.selectedDocumentIds;
+
+                    const isAlreadySelected = selectedDocumentIds.some(id => id === documentId);
+
+                    if (isAlreadySelected) {
+                      this.setState({ selectedDocumentIds: selectedDocumentIds.filter(id => id !== documentId) });
+                    } else {
+                      this.setState({ selectedDocumentIds: [...selectedDocumentIds, documentId] });
+                    }
+                  }
+
+                  handleSelectAllDocuments(allDocuments: string[]) {
+                    if (allDocuments.length === this.state.selectedDocumentIds.length) {
+                      this.setState({ selectedDocumentIds: [] });
+                    } else {
+                      this.setState({ selectedDocumentIds: allDocuments });
+                    }
+                  }
+
+                  handleUnmountComponent() {
+                    this.resetState();
+                  }
+                }
+
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h6 data-id="code-title">documents.component.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-13|1,13|4,7">
+                <script type="text/template">
+                  <ng-container *ngIf="selectedDocumentIds$ | async as selectedDocumentIds">
+                    <section class="page">
+                      <div class="sidebar">
+                        <sidebar-component [selectedDocumentIds]="selectedDocumentIds"></sidebar-component>
+                      </div>
+                      <div class="content">
+                        <documents-list-component [selectedDocumentIds]="selectedDocumentIds"></documents-list-component>
+                      </div>
+                      <div class="footer">
+                        NubiSoft 2023
+                      </div>
+                    </section>
+                  </ng-container>
+                </script>
+              </code>
+            </pre>
+          </section>
+        </section>
+
+        <!-- Zarządzanie requestami HTTP -->
+
+        <section>
+          <h4 class="pageTitle"><strong>Obsługa zapytań HTTP</strong></h4>
+
+          <section data-auto-animate>
+            <h6 data-id="code-title">http.service.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-138|41|42|43|44-45|49-51|70-73|82-100|110-135">
+                import { HttpClient, HttpContext, HttpHeaders, HttpParams } from '@angular/common/http';
+                import { Injectable } from '@angular/core';
+
+                import { BehaviorSubject, of } from 'rxjs';
+                import { catchError, finalize, shareReplay, tap } from 'rxjs/operators';
+
+                import { CUSTOM_HTTP_HEADERS } from '../interceptors/cache.interceptor';
+
+                type HttpRequestObserve = 'body' | 'events' | 'response';
+                type HttpRequestResponseType = 'arraybuffer' | 'blob' | 'json' | 'text';
+                type HttpRequestMethod = 'POST' | 'PATCH' | 'PUT' | 'DELETE' | 'GET';
+
+                type HttpGetOptions = Parameters<HttpClient['get']>[1];
+                type HttpGetHeaders = {
+                  [header: string]: string | string[];
+                };
+
+                export interface HttpRequestOptions<
+                  T,
+                  O extends HttpRequestObserve = HttpRequestObserve,
+                  R extends HttpRequestResponseType = HttpRequestResponseType
+                > {
+                  body?: T;
+                  headers?: HttpHeaders | { [header: string]: string | string[] };
+                  context?: HttpContext;
+                  observe?: O;
+                  params?: HttpParams | { [param: string]: string | number | boolean | ReadonlyArray<string | number | boolean> };
+                  reportProgress?: boolean;
+                  responseType?: R;
+                  withCredentials?: boolean;
+                  withoutRefresh?: boolean;
+                }
+
+                const DEFAULT_HTTP_REQUEST_OPTIONS: HttpRequestOptions<unknown> = {
+                  observe: 'response',
+                  responseType: 'json',
+                  withoutRefresh: false,
+                };
+
+                @Injectable()
+                export class BaseHttpService {
+                  private refreshCache = false;
+                  private refreshSubject: BehaviorSubject<unknown> = new BehaviorSubject<unknown>(null);
+                  public isFetching$ = new BehaviorSubject<boolean>(false);
+                  public isUpdating$ = new BehaviorSubject<boolean>(false);
+
+                  constructor(private http: HttpClient) {}
+
+                  get refetch() {
+                    return this.refreshSubject.asObservable();
+                  }
+
+                  private extendGetHeaders(headers: HttpGetHeaders = {}) {
+                    const extendedHeaders = new Map(Object.entries(headers));
+
+                    if (this.refreshCache) {
+                      extendedHeaders.set(CUSTOM_HTTP_HEADERS.CACHE_REFRESH, 'true');
+                    } else {
+                      extendedHeaders.delete(CUSTOM_HTTP_HEADERS.CACHE_REFRESH);
+                    }
+
+                    return new HttpHeaders(Object.fromEntries(extendedHeaders));
+                  }
+
+                  /**
+                  * @memberof BaseHttpService
+                  * @method forceRefetch()
+                  * @description Method to force refetch all GET reuqests from this service
+                  */
+                  public forceRefetch() {
+                    this.refreshCache = true;
+                    this.refreshSubject.next(null);
+                  }
+
+                  /**
+                  * @memberof BaseHttpService
+                  * @method get()
+                  * @param {string} url API endpoint url string
+                  * @param {HttpGetOptions} [options] Object with request options
+                  * @description Method to fetch data with GET
+                  */
+                  public get<T>(url: string, options?: HttpGetOptions) {
+                    this.isFetching$.next(true);
+
+                    const extendedHeaders = this.extendGetHeaders(options?.headers as HttpGetHeaders);
+
+                    return this.http
+                      .get<T>(url, {
+                        ...options,
+                        headers: extendedHeaders,
+                      })
+                      .pipe(
+                        shareReplay({ refCount: true }),
+                        catchError(error => of(error)),
+                        finalize(() => {
+                          this.isFetching$.next(false);
+                          this.refreshCache = false;
+                        })
+                      );
+                  }
+
+                  /**
+                  * @memberof BaseHttpService
+                  * @method request()
+                  * @param {HttpRequestMethod} method One of the methods - POST/PUT/PATCH/DELETE/GET
+                  * @param {string} url API endpoint url string
+                  * @param {HttpRequestOptions} options Object with request options
+                  * @description Method to send request of any POST/PUT/PATCH/DELETE
+                  */
+                  public request<T>(method: HttpRequestMethod, url: string, options: HttpRequestOptions<T>) {
+                    this.isUpdating$.next(true);
+
+                    const requestOptions = {
+                      ...DEFAULT_HTTP_REQUEST_OPTIONS,
+                      ...options,
+                    };
+
+                    return this.http.request(method, url, requestOptions).pipe(
+                      tap(response => {
+                        if (requestOptions.withoutRefresh) {
+                          return of(response);
+                        } else {
+                          this.refreshCache = true;
+                          this.refreshSubject.next(null);
+
+                          return of(response);
+                        }
+                      }),
+                      catchError(error => {
+                        return of(error);
+                      }),
+                      finalize(() => {
+                        this.isUpdating$.next(false);
+                      })
+                    );
+                  }
+                }
+
+              </code>
+            </pre>
+          </section>
+
+          <section data-auto-animate>
+            <h6 data-id="code-title">users.service.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-36|12|13|15-23|25-29|31-35">
+                import { Injectable } from '@angular/core';
+
+                import { switchMap } from 'rxjs';
+
+                import { BaseHttpService } from '@/app/core/services/http.service';
+
+                import { IUser } from './users.model';
+
+                @Injectable({
+                  providedIn: 'root',
+                })
+                export class UsersService extends BaseHttpService {
+                  private apiBaseEndpoint = '/jwt/rest/create';
+
+                  getUsers() {
+                    const apiUrl = `${this.apiBaseEndpoint}/usersList`;
+
+                    return this.refetch.pipe(
+                      switchMap(() => {
+                        return this.get<IUser[]>(apiUrl);
+                      })
+                    );
+                  }
+
+                  createNewUser(user: IUser) {
+                    const apiUrl = `${this.apiBaseEndpoint}/user`;
+
+                    return this.request('POST', apiUrl, { body: user });
+                  }
+
+                  editUser(user: IUser) {
+                    const apiUrl = `${this.apiBaseEndpoint}/editUser`;
+
+                    return this.request('POST', apiUrl, { body: user });
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+
+          <section data-auto-animate>
+            <h6 data-id="code-title">users.service.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-15|2-3|9-14">
+                <script type="text/template">
+                  export class UsersComponent implements OnInit {
+                    users$: Observable<IUser[]>;
+                    isLoading$: Observable<boolean>;
+
+                    constructor(
+                      private _usersService: UsersService
+                    ) {}
+
+                    ngOnInit() {
+                      this.isLoading$ = this._usersService.isFetching$;
+                      this.users$ = this._usersService
+                        .getUsers()
+                        .pipe(shareReplay({ refCount: true }));
+                    }
+                  }
+                </script>
+              </code>
+            </pre>
+          </section>
+
+          <section data-auto-animate>
+            <h6 data-id="code-title">users.component.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-14|1|2,14|5,8-10,12">
+                <script type="text/template">
+                  <loader-spinner *ngIf="isLoading$ | async"></loader-spinner>
+                  <ng-container *ngIf="users$ | async as users"></ng-container>
+                    <section class="container">
+                      <div class="header">
+                        <users-actions [users]="users"></users-actions>
+                      </div>
+                      <div class="content">
+                        <div *ngFor="let userData of users">
+                          <users-row [rowData]="userData"></users-row>
+                        </div>
+                      </div>
+                      <mobile-menu (filterUsers)="filterUsers(users)"></mobile-menu>
+                    </section>
+                  </ng-container>
+                </script>
+              </code>
+            </pre>
+          </section>
+
+          <section data-auto-animate>
+            <h6 data-id="code-title">users.service.ts (alternatywa)</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-21|1|2-3|10-16|18-20">
+                <script type="text/template">
+                  export class UsersComponent implements OnInit, OnDestroy {
+                    users$: Observable<IUser[]>;
+                    users: IUser[];
+                    isLoading$: Observable<boolean>;
+
+                    constructor(
+                      private _usersService: UsersService,
+                    ) {}
+
+                    ngOnInit() {
+                      this.isLoading$ = this._usersService.isFetching$;
+                      this.users$ = this._usersService
+                        .getUsers()
+                        .pipe(shareReplay({ refCount: true }))
+                        .subscribe(response => this.users = response.body);
+                    }
+
+                    ngOnDestroy() {
+                      this.users$.unsubscribe();
+                    }
+                  }
+                </script>
+              </code>
+            </pre>
+          </section>
+
+          <section data-auto-animate>
+            <h6 data-id="code-title">users.component.ts (alternatywa)</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-14|1|2,14|5,9,12">
+                <script type="text/template">
+                  <loader-spinner *ngIf="isLoading$ | async"></loader-spinner>
+                  <ng-container *ngIf="users"></ng-container>
+                    <section class="container">
+                      <div class="header">
+                        <users-actions [users]="users"></users-actions>
+                      </div>
+                      <div class="content">
+                        <div *ngFor="let userData of users">
+                          <users-row [rowData]="userData"></users-row>
+                        </div>
+                      </div>
+                      <mobile-menu (filterUsers)="filterUsers(users)"></mobile-menu>
+                    </section>
+                  </ng-container>
+                </script>
+              </code>
+            </pre>
+          </section>
+
+        </section>
+
+        <!-- Cache HTTP -->
+
+        <section>
+          <h4 class="pageTitle"><strong>Cache HTTP</strong></h4>
+
+          <section data-auto-animate>
+            <h6 data-id="code-title">cache.service.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-42|8|10-19|21-37|39-41">
+                <script type="text/template">
+                  import { HttpResponse } from '@angular/common/http';
+                  import { Injectable } from '@angular/core';
+
+                  @Injectable({
+                    providedIn: 'root',
+                  })
+                  export class CacheService {
+                    private cache = new Map<string, [Date | null, HttpResponse<any>]>();
+
+                    set(key: string, value: any, cacheTime: number | null = null) {
+                      if (cacheTime) {
+                        const expiresIn = new Date();
+                        expiresIn.setSeconds(expiresIn.getSeconds() + cacheTime);
+
+                        this.cache.set(key, [expiresIn, value]);
+                      } else {
+                        this.cache.set(key, [null, value]);
+                      }
+                    }
+
+                    get(key: string) {
+                      const cacheTuple = this.cache.get(key);
+
+                      if (!cacheTuple) return null;
+
+                      const expiresIn = cacheTuple[0];
+                      const httpCachedResponse = cacheTuple[1];
+                      const timeNow = new Date();
+
+                      if (expiresIn && expiresIn.getTime() < timeNow.getTime()) {
+                        this.cache.delete(key);
+
+                        return null;
+                      }
+
+                      return httpCachedResponse;
+                    }
+
+                    delete(key: string) {
+                      this.cache.delete(key);
+                    }
+                  }
+                </script>
+              </code>
+            </pre>
+          </section>
+
+          <section data-auto-animate>
+            <h6 data-id="code-title">cache.interceptor.ts</h6>
+            <pre>
+              <code data-trim data-noescape data-line-numbers="1-67|31-33|34-36|38|41-51|53-58">
+                <script type="text/template">
+                  import {
+                    HTTP_INTERCEPTORS,
+                    HttpEvent,
+                    HttpHandler,
+                    HttpInterceptor,
+                    HttpRequest,
+                    HttpResponse,
+                  } from '@angular/common/http';
+                  import { Injectable } from '@angular/core';
+
+                  import { Observable, tap } from 'rxjs';
+
+                  import { CacheService } from '../services/cache.service';
+
+                  export enum CUSTOM_HTTP_HEADERS {
+                    CACHE_REFRESH = 'x-cache-refresh',
+                    CACHE_TIME = 'x-cache-time',
+                  }
+
+                  const DEFAULT_CACHE_TIME = 60 * 60; // cache time = 1 hour
+
+                  @Injectable({
+                    providedIn: 'root',
+                  })
+                  export class CacheInterceptor implements HttpInterceptor {
+                    constructor(private _cacheService: CacheService) {}
+
+                    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+                      return next.handle(req);
+
+                      if (req.method !== 'GET') {
+                        return next.handle(req);
+                      }
+                      if (req.headers.get(CUSTOM_HTTP_HEADERS.CACHE_REFRESH)) {
+                        return this.sendRequest(req, next);
+                      }
+                      const cachedResponse = this._cacheService.get(req.urlWithParams);
+                      return cachedResponse ? of(cachedResponse) : this.sendRequest(req, next);
+                    }
+
+                    sendRequest(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+                      return next.handle(req).pipe(
+                        tap(event => {
+                          if (event instanceof HttpResponse) {
+                            const cacheTime = this.getCacheTime(req);
+
+                            this._cacheService.set(req.urlWithParams, event, cacheTime);
+                          }
+                        })
+                      );
+                    }
+
+                    getCacheTime(request: HttpRequest<any>) {
+                      const cacheTimeHeader = request.headers.get(CUSTOM_HTTP_HEADERS.CACHE_TIME);
+                      if (cacheTimeHeader) {
+                        return Number(cacheTimeHeader);
+                      } else return DEFAULT_CACHE_TIME;
+                    }
+                  }
+
+                  export const CACHE_INTERCEPTOR_PROVIDERS = [
+                    {
+                      provide: HTTP_INTERCEPTORS,
+                      useClass: CacheInterceptor,
+                      multi: true,
+                    },
+                  ];
+                </script>
+              </code>
+            </pre>
+          </section>
+
+        </section>
+
+
+        <!--  -->
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

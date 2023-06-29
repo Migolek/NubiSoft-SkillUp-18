@@ -24,8 +24,13 @@
 
 
 // Default mixins and settings
-@import "../template/mixins";
-@import "../template/settings";
+@import "../../../node_modules/reveal.js/css/theme/template/mixins.scss";
+@import "../../../node_modules/reveal.js/css/theme/template/settings.scss";
+// @import "../../../node_modules/reveal.js/css/theme/template/exposer.scss";
+@import "../../../node_modules/reveal.js/css/theme/template/theme.scss";
+
+// // @import "../template/mixins";
+// // @import "../template/settings";
 
 // Include theme-specific fonts
 $systemFontsSansSerif: -apple-system, BlinkMacSystemFont, avenir next, avenir,
@@ -84,7 +89,7 @@ $codeFont: "Fira Code", $systemFontsMono;
 @include light-bg-text-color($background);
 
 // Theme template ------------------------------
-@import "../template/theme";
+// @import "../template/theme";
 // ---------------------------------------------
 
 // Define additional color effects based on Dracula spec
@@ -96,29 +101,29 @@ $codeFont: "Fira Code", $systemFontsMono;
   --r-list-bullet-color: #{$listBulletColor};
 
   --r-background-color: #{$code_background};
-  // --r-main-font: #{$mainFont};
-  // --r-main-font-size: #{$mainFontSize};
-  // --r-main-color: #{$mainColor};
-  // --r-block-margin: #{$blockMargin};
-  // --r-heading-margin: #{$headingMargin};
-  // --r-heading-font: #{$headingFont};
-  // --r-heading-color: #{$headingColor};
-  // --r-heading-line-height: #{$headingLineHeight};
-  // --r-heading-letter-spacing: #{$headingLetterSpacing};
-  // --r-heading-text-transform: #{$headingTextTransform};
-  // --r-heading-text-shadow: #{$headingTextShadow};
-  // --r-heading-font-weight: #{$headingFontWeight};
-  // --r-heading1-text-shadow: #{$heading1TextShadow};
-  // --r-heading1-size: #{$heading1Size};
-  // --r-heading2-size: #{$heading2Size};
-  // --r-heading3-size: #{$heading3Size};
-  // --r-heading4-size: #{$heading4Size};
-  // --r-code-font: #{$codeFont};
-  // --r-link-color: #{$linkColor};
-  // --r-link-color-dark: #{darken($linkColor , 15% )};
-  // --r-link-color-hover: #{$linkColorHover};
-  // --r-selection-background-color: #{$selectionBackgroundColor};
-  // --r-selection-color: #{$selectionColor};
+  --r-main-font: #{$mainFont};
+  --r-main-font-size: #{$mainFontSize};
+  --r-main-color: #{$mainColor};
+  --r-block-margin: #{$blockMargin};
+  --r-heading-margin: #{$headingMargin};
+  --r-heading-font: #{$headingFont};
+  --r-heading-color: #{$headingColor};
+  --r-heading-line-height: #{$headingLineHeight};
+  --r-heading-letter-spacing: #{$headingLetterSpacing};
+  --r-heading-text-transform: #{$headingTextTransform};
+  --r-heading-text-shadow: #{$headingTextShadow};
+  --r-heading-font-weight: #{$headingFontWeight};
+  --r-heading1-text-shadow: #{$heading1TextShadow};
+  --r-heading1-size: #{$heading1Size};
+  --r-heading2-size: #{$heading2Size};
+  --r-heading3-size: #{$heading3Size};
+  --r-heading4-size: #{$heading4Size};
+  --r-code-font: #{$codeFont};
+  --r-link-color: #{$linkColor};
+  --r-link-color-dark: #{darken($linkColor , 15% )};
+  --r-link-color-hover: #{$linkColorHover};
+  --r-selection-background-color: #{$selectionBackgroundColor};
+  --r-selection-color: #{$selectionColor};
 }
 
 .reveal strong,
